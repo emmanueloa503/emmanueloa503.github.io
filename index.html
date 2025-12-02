@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emmanuel Owusu-Ampaw | Portfolio</title>
-  
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -13,31 +13,58 @@
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
-      background: #fafafa;
+      background: #f4f6f9;
       color: #222;
     }
 
+    /* HEADER BANNER */
+    .header {
+      background: linear-gradient(135deg, #004cff, #008cff);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .header h2 {
+      font-size: 20px;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    /* MAIN CONTAINER */
     .container {
       width: 90%;
       max-width: 900px;
       margin: auto;
-      padding-top: 40px;
+      margin-top: -40px;
     }
 
-    h1, h2 {
-      text-align: center;
-      font-weight: 700;
+    /* CARD */
+    .card {
+      background: white;
+      padding: 25px;
+      margin-top: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    h1 {
-      font-size: 34px;
-      margin-bottom: 10px;
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
     }
 
     h2 {
       margin-top: 40px;
-      font-size: 22px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
     }
 
     p {
@@ -45,54 +72,57 @@
       line-height: 1.7;
     }
 
-    .card {
-      background: white;
-      padding: 25px;
-      margin-top: 25px;
-      border-radius: 14px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
-
     ul {
-      margin-left: 22px;
+      margin-left: 20px;
       line-height: 1.7;
+      font-size: 16px;
     }
 
     a {
-      color: #0066ff;
+      color: #005eff;
       font-weight: 600;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
 
+    /* ICON ROW */
     .icon-row {
       text-align: center;
       margin-top: 15px;
     }
 
     .icon-row img {
-      width: 28px;
-      margin-right: 12px;
+      width: 30px;
+      margin: 0 10px;
+      transition: transform 0.2s ease;
     }
 
+    .icon-row img:hover {
+      transform: scale(1.2);
+    }
+
+    /* FOOTER */
     .footer {
       margin-top: 50px;
       text-align: center;
-      padding-bottom: 40px;
+      padding: 40px 0;
+      color: #555;
     }
   </style>
-
 </head>
+
 <body>
 
-<div class="container">
-
+<!-- HEADER SECTION -->
+<div class="header">
   <h1>Hi, I'm Emmanuel! 👋</h1>
-
   <h2>💻 Computer Engineering @ NYU | Software • Data • Systems Engineer</h2>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
 
   <div class="card">
     <p>
@@ -112,16 +142,16 @@
   </div>
 
   <!-- DATA SCIENCE -->
+  <h2>📈💰📊 Data Science</h2>
   <div class="card">
-    <h2>📈💰📊 Data Science</h2>
     <ul>
       <li><a href="https://github.com/emmanueloa503/Movie-Recommendation-System">Movie Recommendation System</a></li>
     </ul>
   </div>
 
   <!-- SOFTWARE PROJECTS -->
+  <h2>🌐 Software and Web Application Projects</h2>
   <div class="card">
-    <h2>🌐 Software and Web Application Projects</h2>
     <ul>
       <li><a href="https://github.com/DailyCommuter/DailyCommuter">DailyCommuter</a></li>
       <li><a href="https://github.com/emmanueloa503/ai-fashion-matcher">ai-fashion-matcher(API web application)</a></li>
@@ -138,28 +168,24 @@
   </div>
 
   <!-- EMBEDDED SYSTEMS -->
+  <h2>🔌 Embedded Systems Projects</h2>
   <div class="card">
-    <h2>🔌 Embedded Systems Projects</h2>
     <ul>
-      <li>
-        <a href="https://github.com/emmanueloa503/Real-time-Embedded-System-Projects/tree/main/Wearable%20Parkinsonian%20Tremor%20Detector/rtes_challenge">
-        Wearable Parkinsonian
-        </a>
-      </li>
+      <li><a href="https://github.com/emmanueloa503/Real-time-Embedded-System-Projects/tree/main/Wearable%20Parkinsonian%20Tremor%20Detector/rtes_challenge">Wearable Parkinsonian</a></li>
     </ul>
   </div>
 
-  <!-- INTERNET ARCHITECTURE -->
+  <!-- IAP -->
+  <h2>🌐 Internet-Architecture-and-Protocols</h2>
   <div class="card">
-    <h2>🌐 Internet-Architecture-and-Protocols</h2>
     <ul>
       <li><a href="https://github.com/emmanueloa503/Internet-Architecture-and-Protocols-">IAP</a></li>
     </ul>
   </div>
 
-  <!-- PYTHON PROJECTS -->
+  <!-- PYTHON -->
+  <h2>🐍 Python Projects</h2>
   <div class="card">
-    <h2>🐍 Python Projects</h2>
     <ul>
       <li><a href="https://github.com/emmanueloa503/PYTHON/tree/main/WEATHERAPP">Weather App</a></li>
       <li><a href="https://github.com/emmanueloa503/PYTHON/tree/main/rock%20paper%20scissors">Rock, Paper, Scissors Game</a></li>
@@ -168,16 +194,16 @@
   </div>
 
   <!-- TABLEAU -->
+  <h2>👨‍💻 TABLEAU Projects</h2>
   <div class="card">
-    <h2>👨‍💻 TABLEAU Projects</h2>
     <ul>
       <li><a href="https://github.com/emmanueloa503/TABLEAU/tree/main/netflix">Netflix</a></li>
     </ul>
   </div>
 
   <!-- C++ -->
+  <h2>🔢 C++ Projects</h2>
   <div class="card">
-    <h2>🔢 C++ Projects</h2>
     <ul>
       <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP%201.cpp">Matrix</a></li>
       <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP%202.cpp">Odd Numbers</a></li>
@@ -191,16 +217,16 @@
     </ul>
   </div>
 
-  <!-- PHOTOGRAPHY -->
+  <!-- MEDIA -->
+  <h2>👨‍💻 Photography | Videography | Creative directing projects</h2>
   <div class="card">
-    <h2>👨‍💻 Photography | Videography | Creative directing projects</h2>
     <ul>
       <li><a href="https://mannymedia.studio/">Manny Media</a></li>
     </ul>
   </div>
 
   <div class="footer">
-    <p>### 🚀 Let's Build Something Amazing Together!</p>
+    <p>🚀 Let's Build Something Amazing Together!</p>
     <p>💬 Feel free to reach out via  
       <a href="https://www.linkedin.com/in/emmanueloa/" target="_blank"><strong>LinkedIn</strong></a>
     </p>
