@@ -66,23 +66,56 @@
       height: auto;
     }
 
-    /* ABOUT SECTION */
-    #about {
+    /* SECTION BASE STYLE */
+    section {
       padding: 80px 100px;
       max-width: 900px;
       margin: auto;
     }
 
-    #about h2 {
+    section h2 {
       font-size: 32px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
-    #about p {
+    section p {
       font-size: 17px;
       line-height: 1.75;
-      max-width: 800px;
+    }
+
+    /* EXPERIENCE CARD */
+    .exp-card {
+      background: #ffffff;
+      border-left: 5px solid #ffe600;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .exp-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .exp-company {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    .exp-date {
+      font-size: 15px;
+      color: #777;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .exp-card ul {
+      margin-left: 20px;
+      line-height: 1.7;
     }
   </style>
 </head>
@@ -99,7 +132,6 @@
 
   <!-- HERO SECTION -->
   <section class="hero">
-
     <div class="hero-text">
       <h1>
         Hello,<br>
@@ -112,7 +144,6 @@
       </div>
     </div>
 
-    <!-- PROFESSIONAL TECH ILLUSTRATION -->
     <img src="https://raw.githubusercontent.com/emmanueloa503/emmanueloa503.github.io/main/tech-illustration.png" alt="Tech Illustration" />
   </section>
 
@@ -128,6 +159,23 @@
       with a track record of improving performance, accuracy, and user experience through data-driven 
       engineering.
     </p>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience">
+    <h2>.experience()</h2>
+
+    <div class="exp-card">
+      <div class="exp-title">Web Developer / Photo & Video Engineer (Self-Employed)</div>
+      <div class="exp-company">Manny Media Photo & Video Service – Remote, United States</div>
+      <div class="exp-date">January 2019 – Present</div>
+
+      <ul>
+        <li>Built and deployed responsive portfolio websites using JavaScript, HTML, CSS, and REST APIs for dynamic content updates.</li>
+        <li>Automated media upload workflows using Python and SQL, reducing manual processing time by 30%.</li>
+      </ul>
+    </div>
+
   </section>
 
 </body>
