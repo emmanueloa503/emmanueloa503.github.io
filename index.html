@@ -1,238 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emmanuel Owusu-Ampaw | Portfolio</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f4f6f9;
-      color: #222;
+      font-family: "Inter", sans-serif;
+      background: #ffffff;
+      color: #111;
     }
 
-    /* HEADER BANNER */
-    .header {
-      background: linear-gradient(135deg, #004cff, #008cff);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 40px;
+      padding: 25px 50px;
+      font-size: 15px;
     }
 
-    .header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .header h2 {
-      font-size: 20px;
-      font-weight: 400;
-      opacity: 0.9;
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      width: 90%;
-      max-width: 900px;
-      margin: auto;
-      margin-top: -40px;
-    }
-
-    /* CARD */
-    .card {
-      background: white;
-      padding: 25px;
-      margin-top: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 24px;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    ul {
-      margin-left: 20px;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    a {
-      color: #005eff;
-      font-weight: 600;
+    nav a {
+      color: #333;
       text-decoration: none;
+      font-weight: 500;
     }
-    a:hover {
+
+    nav a:hover {
       text-decoration: underline;
     }
 
-    /* ICON ROW */
-    .icon-row {
-      text-align: center;
-      margin-top: 15px;
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 100px;
     }
 
-    .icon-row img {
-      width: 30px;
-      margin: 0 10px;
-      transition: transform 0.2s ease;
+    .hero-text {
+      max-width: 500px;
     }
 
-    .icon-row img:hover {
-      transform: scale(1.2);
+    .hero-text h1 {
+      font-size: 58px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
     }
 
-    /* FOOTER */
-    .footer {
-      margin-top: 50px;
-      text-align: center;
-      padding: 40px 0;
-      color: #555;
+    .highlight {
+      background: #ffe600;
+      padding: 6px 10px;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .hero img {
+      width: 380px;
+      height: auto;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER SECTION -->
-<div class="header">
-  <h1>Hi, I'm Emmanuel! 👋</h1>
-  <h2>💻 Computer Engineering @ NYU | Software • Data • Systems Engineer</h2>
-</div>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">.about()</a>
+    <a href="#experience">.experience()</a>
+    <a href="#projects">.projects()</a>
+    <a href="#contact">.contact()</a>
+  </nav>
 
-<!-- MAIN CONTENT -->
-<div class="container">
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-  <div class="card">
-    <p>
-      Engineer skilled in developing full-stack applications, managing data systems, and supporting technical infrastructure across diverse environments. Experienced in Python, JavaScript (React, Node.js), SQL, and C++, with hands-on application of data analysis, API integration, and machine learning workflows. Builds scalable, user-centered solutions that combine clean design, automation, and system efficiency. Strong technical foundation in both software development and IT operations, with a track record of improving performance, accuracy, and user experience through data-driven engineering.
-    </p>
-  </div>
+    <div class="hero-text">
+      <h1>
+        Hello,<br>
+        I'm Emmanuel<br>
+        Owusu-Ampaw.
+      </h1>
 
-  <h2>🤳 Connect with me:</h2>
+      <div class="highlight">
+        I'm a Software • Data • Systems Engineer
+      </div>
+    </div>
 
-  <div class="card icon-row">
-    <a href="https://www.linkedin.com/in/emmanuel-o-5b5560138/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn">
-    </a>
-    <a href="https://www.instagram.com/iammannymedia/?hl=en" target="_blank">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" alt="Instagram">
-    </a>
-  </div>
-
-  <!-- DATA SCIENCE -->
-  <h2>📈💰📊 Data Science</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/Movie-Recommendation-System">Movie Recommendation System</a></li>
-    </ul>
-  </div>
-
-  <!-- SOFTWARE PROJECTS -->
-  <h2>🌐 Software and Web Application Projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/DailyCommuter/DailyCommuter">DailyCommuter</a></li>
-      <li><a href="https://github.com/emmanueloa503/ai-fashion-matcher">ai-fashion-matcher(API web application)</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/CAPSTONE">CAPSTONE(Dynamic website)</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/LOGIN">Login page</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/SHOP">Shopping website</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/clock">Clock</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/contact">Contact Form</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/movieApp">Movie App</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/to%20do%20list%20app">To do list</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-ENGINEERING/tree/main/sky_racers%20(software%20engineering%20project)">Sky racers</a></li>
-      <li><a href="https://github.com/emmanueloa503/SOFTWARE-DEVELOPMENT/tree/main/Youtube%20Clone">Youtube Clone</a></li>
-    </ul>
-  </div>
-
-  <!-- EMBEDDED SYSTEMS -->
-  <h2>🔌 Embedded Systems Projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/Real-time-Embedded-System-Projects/tree/main/Wearable%20Parkinsonian%20Tremor%20Detector/rtes_challenge">Wearable Parkinsonian</a></li>
-    </ul>
-  </div>
-
-  <!-- IAP -->
-  <h2>🌐 Internet-Architecture-and-Protocols</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/Internet-Architecture-and-Protocols-">IAP</a></li>
-    </ul>
-  </div>
-
-  <!-- PYTHON -->
-  <h2>🐍 Python Projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/PYTHON/tree/main/WEATHERAPP">Weather App</a></li>
-      <li><a href="https://github.com/emmanueloa503/PYTHON/tree/main/rock%20paper%20scissors">Rock, Paper, Scissors Game</a></li>
-      <li><a href="https://github.com/emmanueloa503/PYTHON/tree/main/Hangman">Hangman</a></li>
-    </ul>
-  </div>
-
-  <!-- TABLEAU -->
-  <h2>👨‍💻 TABLEAU Projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/TABLEAU/tree/main/netflix">Netflix</a></li>
-    </ul>
-  </div>
-
-  <!-- C++ -->
-  <h2>🔢 C++ Projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP%201.cpp">Matrix</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP%202.cpp">Odd Numbers</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP%203.cpp">Number of words</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP4.cpp">Arranges numbers in descending order</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP5.cpp">Palindromes</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP6.cpp">Palindromes</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/GHP5.cpp">Prices</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/stack.cpp">Stack</a></li>
-      <li><a href="https://github.com/emmanueloa503/CPP/blob/main/C%2B%2B/stack.h">Stack.h</a></li>
-    </ul>
-  </div>
-
-  <!-- MEDIA -->
-  <h2>👨‍💻 Photography | Videography | Creative directing projects</h2>
-  <div class="card">
-    <ul>
-      <li><a href="https://mannymedia.studio/">Manny Media</a></li>
-    </ul>
-  </div>
-
-  <div class="footer">
-    <p>🚀 Let's Build Something Amazing Together!</p>
-    <p>💬 Feel free to reach out via  
-      <a href="https://www.linkedin.com/in/emmanueloa/" target="_blank"><strong>LinkedIn</strong></a>
-    </p>
-  </div>
-
-</div>
+    <!-- PROFESSIONAL TECH ILLUSTRATION -->
+    <img src="https://raw.githubusercontent.com/emmanueloa503/emmanueloa503.github.io/main/tech-illustration.png" alt="Tech Illustration" />
+  </section>
 
 </body>
 </html>
