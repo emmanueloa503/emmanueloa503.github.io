@@ -8,12 +8,6 @@
   A modern, responsive engineering portfolio built with HTML, CSS, and JavaScript.
 </p>
 
-
-#  Emmanuel Owusu-Ampaw — Portfolio Website
-
-Welcome to the repository for my personal portfolio website.  
-This site showcases my engineering background, technical projects, and professional experience.
-
  **Live Site:**  
 https://emmanueloa503.github.io/
 
