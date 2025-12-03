@@ -1,11 +1,3 @@
-#  Emmanuel Owusu-Ampaw — Portfolio Website
-
-Welcome to the repository for my personal portfolio website.  
-This site showcases my engineering background, technical projects, and professional experience.
-
- **Live Site:**  
-https://emmanueloa503.github.io/
-
 <p align="center">
   <img src="images/5.png" alt="Emmanuel Owusu-Ampaw" width="280">
 </p>
@@ -15,6 +7,15 @@ https://emmanueloa503.github.io/
 <p align="center">
   A modern, responsive engineering portfolio built with HTML, CSS, and JavaScript.
 </p>
+
+
+#  Emmanuel Owusu-Ampaw — Portfolio Website
+
+Welcome to the repository for my personal portfolio website.  
+This site showcases my engineering background, technical projects, and professional experience.
+
+ **Live Site:**  
+https://emmanueloa503.github.io/
 
 ---
 
