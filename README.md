@@ -6,6 +6,16 @@ This site showcases my engineering background, technical projects, and professio
  **Live Site:**  
 https://emmanueloa503.github.io/
 
+<p align="center">
+  <img src="images/5.png" alt="Emmanuel Owusu-Ampaw" width="280">
+</p>
+
+<h1 align="center">Emmanuel Owusu-Ampaw — Portfolio Website</h1>
+
+<p align="center">
+  A modern, responsive engineering portfolio built with HTML, CSS, and JavaScript.
+</p>
+
 ---
 
 ##  About the Website
