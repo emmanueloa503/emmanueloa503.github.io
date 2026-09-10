@@ -48,8 +48,8 @@
     .hero {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 80px 100px;
+      align-items: flex-start;
+      padding: 35px 100px 25px;
     }
 
     .hero-text {
@@ -73,14 +73,30 @@
     }
 
     .hero img {
-      width: 380px;
+      width: 300px;
       height: auto;
+    }
+
+    .hero-about {
+      margin-top: 28px;
+      max-width: 520px;
+    }
+
+    .hero-about h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .hero-about p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
     }
 
     /* SECTION BASE STYLE */
     section {
-      padding: 80px 100px;
-      max-width: 900px;
+      padding: 45px 100px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -137,8 +153,8 @@
       padding: 20px;
       border-radius: 20px;
       box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      max-width: 340px;
-      margin-left: 40px;
+      max-width: 300px;
+      margin-left: 50px;
     }
 
     .hero-img {
@@ -168,41 +184,43 @@
   <!-- NAVBAR -->
 <nav>
     <a href="#home">.home()</a>
-    <a href="#about">.about()</a>
+    <!--<a href="#home">.about()</a>-->
     <a href="#experience">.experience()</a>
     <a href="#projects">.projects()</a>
     <a href="#contact">.contact()</a>
 </nav>
 
-<div style="height:100px;"></div>
+<div style="height:70px;"></div>
 
 <!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="hero-text">
-      <h1>
-        Hello,<br>
-        I'm Emmanuel<br>
-        Owusu-Ampaw.
-      </h1>
+<div class="hero-text">
+  <h1>
+    Hello,<br>
+    I'm Emmanuel<br>
+    Owusu-Ampaw.
+  </h1>
 
-      <div class="highlight">
-        Computer Engineering @ NYU
-      </div>
-      
-      <div class="highlight">
-        Software • Data • Systems Engineer
-      </div>
-    </div>
+  <div class="highlight">
+    Computer Engineering @ NYU
+  </div>
 
-    <div class="hero-img-container">
-      <img src="images/3.png" alt="Emmanuel Owusu-Ampaw" class="hero-img" />
-    </div>
+  <div class="highlight">
+    Software • AI • Full-Stack Engineer
+  </div>
 
-
-</section>
+  <div class="hero-about">
+    <h2>.about()</h2>
+    <p>
+      Computer engineer and builder with experience across software development,
+      AI/LLMs, frontend platforms, and technical problem-solving. I build
+      user-centered products, automate inefficient workflows, and turn real
+      problems into working software.
+    </p>
+  </div>
+</div>
 
   <!-- ABOUT SECTION -->
-  <section id="about">
+ <!-- <section id="about">
     <h2>.about()</h2>
     <p>
       Engineer skilled in developing full-stack applications, managing data systems, and supporting 
@@ -213,10 +231,10 @@
       with a track record of improving performance, accuracy, and user experience through data-driven 
       engineering.
     </p>
-  </section>
+  </section> -->
 
   <!-- EXPERIENCE SECTION -->
-  <section id="experience">
+  <!--<section id="experience">
     <h2>.experience()</h2>
 
     <div class="exp-card">
@@ -230,7 +248,46 @@
       </ul>
     </div>
 
-  </section>
+  </section>-->
+  <section id="experience">
+  <h2>.experience()</h2>
+
+  <div class="exp-card">
+    <div class="exp-title">Frontend & User Experience Developer</div>
+    <div class="exp-company">Black Connect, Inc. – Remote, United States</div>
+    <div class="exp-date">May 2026 – Present</div>
+
+    <ul>
+      <li>Shipped user-facing platform improvements across VillageSquare/Black Connect, including branding and localization updates.</li>
+      <li>Diagnosed frontend and backend platform issues by reproducing defects, tracing routes, components, configuration files, and APIs.</li>
+      <li>Evaluated Qboxmail infrastructure and APIs for SquareBiz Mail and helped define a path toward mailbox provisioning automation.</li>
+    </ul>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-title">Advanced AI-Powered Insights & Data Extraction Extern</div>
+    <div class="exp-company">Outamation – Remote, United States</div>
+    <div class="exp-date">January 2026 – March 2026</div>
+
+    <ul>
+      <li>Built an end-to-end RAG chatbot for mortgage documents using Python, FLAN-T5, FAISS, Sentence Transformers, Tesseract OCR, and Gradio.</li>
+      <li>Developed document-processing and semantic retrieval pipelines for extracting, chunking, embedding, and querying PDF content.</li>
+      <li>Built a Gradio interface with document upload, source citations, filtering, retrieval controls, and confidence scoring.</li>
+    </ul>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-title">Founder & Web Developer</div>
+    <div class="exp-company">Manny Media Photo & Video Service – New York, NY</div>
+    <div class="exp-date">January 2019 – Present</div>
+
+    <ul>
+      <li>Founded and operate a photo and video services business, managing client projects and technical workflows.</li>
+      <li>Reduced manual media-processing time by 30% by automating repetitive workflows with Python and SQL.</li>
+      <li>Built web experiences using JavaScript, HTML, CSS, and REST APIs to support service delivery and business operations.</li>
+    </ul>
+  </div>
+</section>
 
     <!-- PROJECTS SECTION -->
   <section id="projects">
@@ -328,7 +385,7 @@
     <div class="exp-card">
       <h3>📸 Photography / Videography / Creative Direction</h3>
       <ul>
-        <li><a href="https://mannymedia.studio/">Manny Media</a></li>
+       <!-- <li><a href="https://mannymedia.studio/">Manny Media</a></li>-->
       </ul>
     </div>
 
